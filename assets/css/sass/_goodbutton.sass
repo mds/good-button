@@ -1,0 +1,52 @@
+
+// -----------------------------------------------------------------------------------------
+// tweak these variables to get the style you want
+// -----------------------------------------------------------------------------------------
+
+$base-color: #ff6600
+$label-color: #fff
+$label-font: lucida sans, sans-serif
+$label-font-size: 1em
+$label-shadow-up: true // only make true for medium to dark colored buttons
+$label-shadow-down: false // only make true for light buttons
+
+// -----------------------------------------------------------------------------------------
+// you don't need to change anything below here unless you want to change the size, etc.
+// -----------------------------------------------------------------------------------------
+=labelshadowup
+  @if $label-shadow-up
+    +up
+
+=labelshadowdown
+  @if $label-shadow-down
+    +down
+
+=up
+  text-shadow: 0 -1px rgba(black, .3)
+
+=down
+  text-shadow: 0 1px rgba(white, .6)
+
+=goodbtn
+  border: none
+  display: block
+  cursor: pointer
+  padding: .5em 3em
+  border-radius: 4px
+  color: $label-color
+  text-decoration: none
+  font-family: $label-font
+  font-size: $label-font-size
+  box-shadow: inset 0 1px 0 0 rgba(black, .1), inset 0 -1px 0 0 rgba(black, .2), inset 1px 0 0 0 rgba(black, .2), inset -1px 0 0 0 rgba(black, .2), 0 1px 0 0 rgba(black, .1)
+  +background-image(linear-gradient(tint($base-color, 20%) 0, shade($base-color, 10%) 100%))
+  +labelshadowup
+  +labelshadowdown
+
+  &:hover
+    +background-image(linear-gradient(tint($base-color, 10%) 0, tint(shade($base-color, 20%), 10%) 100%))
+
+  &:active
+    color: shade($label-color, 10%)
+    box-shadow: inset 0 1px 2px 0 rgba(black, .3), inset 0 -1px 0 0 rgba(black, .1), inset 1px 0 0 0 rgba(black, .2), inset -1px 0 0 0 rgba(black, .2)
+    +background-image(linear-gradient(shade($base-color, 30%) 0, shade($base-color, 20%) 100%))
+    +transform(translateY(1px))
