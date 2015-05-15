@@ -9,8 +9,8 @@ $base-color: #0099ff
 $label-color: #fff
 $label-font: lucida sans, sans-serif
 $label-font-size: 1em
-$label-shadow-up: true // only make true for medium to light colored buttons
-$label-shadow-down: false // only make true for lightbuttons
+$label-shadow-up: true // only make true for medium to dark colored buttons
+$label-shadow-down: false // only make true for light buttons
 ```
 ![good button gif](https://s3.amazonaws.com/f.cl.ly/items/442L1F2d053c31121a3D/Screen%20Recording%202015-05-15%20at%2001.25%20PM.gif)
 
