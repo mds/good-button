@@ -3,7 +3,7 @@ Good button is a button that actually looks like a button. It's flat-ish, but st
 
 ![good button gif](https://s3.amazonaws.com/f.cl.ly/items/442L1F2d053c31121a3D/Screen%20Recording%202015-05-15%20at%2001.25%20PM.gif)
 
-Here are the variable to give your Good Button some style.
+Here are the variables to give your Good Button some style.
 ```
 $base-color: #0099ff
 $label-color: #fff
