@@ -4,7 +4,7 @@ Good button is a button that actually looks like a button. It's flat-ish, but st
 ![good button gif](https://s3.amazonaws.com/f.cl.ly/items/442L1F2d053c31121a3D/Screen%20Recording%202015-05-15%20at%2001.25%20PM.gif)
 
 Here are the variables to give your Good Button some style.
-```
+```sass
 $base-color: #0099ff
 $label-color: #fff
 $label-font: lucida sans, sans-serif
@@ -14,7 +14,7 @@ $label-shadow-down: false // only make true for lightbuttons
 ```
 
 Add the mixin to your very own button.
-```
+```sass
 button
   +goodbtn
 ```
