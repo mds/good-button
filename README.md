@@ -1,5 +1,5 @@
 # Good Button
-Good Button is a button created with Sassy goodness that actually looks like a button. It's flat(ish), but still has those subtle gradients, inner-shadows, and drop shadows that give a button its buttonness. Feed Good Button a few variables and the mixin takes care of the rest. Give it a try to make your button feel like a button.
+*Good Button* is a button created with Sassy goodness that actually looks like a button. It has subtle gradients, inner-shadows, and drop shadows that give a button its buttonness. Feed *Good Button* a few variables and the mixin takes care of the rest. Give it a try to make your button feel like a button.
 
 DEMO: http://mds.is/making-good-buttons/
 
